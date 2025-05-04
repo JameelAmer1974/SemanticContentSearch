@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Summarization page</title>
+    <link href="{{ url_for('static', filename='./css/style.css') }}" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<h1>Summarization</h1>
+
+
+
+<form action="/summary" method="post"  id="jsonForm">
+    <input type="text" id="document_content" name="document_content" placeholder="enter your text to summarize"/>
+    <button type="submit">summarize</button>
+</form>
+/**
+
+<p>the document summary</p>
+<p>--------------------</p>
+<p>{{ summary }}</p>
+</body>
+</html>
